@@ -60,7 +60,7 @@ if password.__contains__('!' or '&' or '^' or '%' or '$' or '#'):
         print('Haslo musi zawirac co najmniej 8 znakow')
     elif password.islower():
         print('Haslo musi zawierac co najmniej 1 wielka lietre')
-    elif password.isalpha():
+    elif password.isalnum():
         print('Haslo musi zawierac co najmniej 1 cyfre')
     else:
         print('Haslo poprawne')
