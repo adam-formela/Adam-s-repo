@@ -10,4 +10,3 @@ if sentence == sentence[::-1]:
     print('To zdanie jest polindromem')
 else:
     print('To zdanie nie jest polindromem')
-    
