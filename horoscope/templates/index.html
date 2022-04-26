@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+
+<form method="POST" action="gethoroscope">
+    <div style="text-align: center;">
+    <div class="btn-group" role="group" >
+        <br>
+        <label for="id_name" style="display: block">Enter your name:</label>
+        <input required="true" type="text" id="id_name" name="query_name" style="text-align: center">
+    </div>
+    <div class="btn-group" role="group" >
+        <br>
+        <label for="id_date" style="display: block">Enter your birth date:</label>
+        <input required="true" type="date" id="id_date" name="query_date">
+    </div>
+    <div>
+        <br>
+        <button type="submit" class="btn">Submit</button>
+    </div>
+        </div>
+</form>
+
+{% endblock %}

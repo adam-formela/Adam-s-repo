@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+
+<div style="text-align: center;" class="result">
+<h3 class="mb-4">
+  Hello {{display_name}}!
+</h3>
+<h3 class="mb-4">
+  Your zodiac sign is: <strong>{{zodiac_sign}}</strong>
+</h3>
+<h3 class="mb-4">
+  Your lucky number is: {{display_lucky_number}}
+</h3>
+<h3 class="mb-4">
+  Your magic prophecy:
+</h3>
+<h3 class="desc">
+  {{display_description}}
+</h3>
+<img src={{zodiac_img}} class="result__image"><br>
+
+<!--<button class="btn" type="button" onclick="window.location.href='{{pdf}}';">Print to PDF</button>-->
+<!--<input action="pdf" type="submit" class="yourclass" name="mysubmit" value="Print to PDF">-->
+<!--<button type="button" onclick="{{pdf}}">Print to PDF</button>-->
+
+</div>
+
+{% endblock %}
