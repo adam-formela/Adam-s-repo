@@ -50,7 +50,7 @@ def check_guess(text):
         return 2
 
 
-keywords = json.load(open('../../08_modules/04/Hangman.JSON'))
+keywords = json.load(open('Hangman.JSON'))
 for nr in keywords:
     keyword = nr
     keyword_str = ''
