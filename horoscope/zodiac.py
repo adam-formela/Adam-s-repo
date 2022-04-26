@@ -64,16 +64,16 @@ def check_date(date):
 
 
 zodiac_dict = {
-    "Aries": "../static/css/Aries.jpg",
-    "Taurus": "../static/css/Taurus.jpg",
-    "Gemini": "../static/css/Gemini.jpg",
-    "Cancer": "../static/css/Cancer.jpg",
-    "Leo": "../static/css/Leo.jpg",
-    "Virgo": "../static/css/Virgo.jpg",
-    "Libra": "../static/css/Libra.jpg",
-    "Scorpio": "../static/css/Scorpio.jpg",
-    "Sagittarius": "../static/css/Sagittarius.jpg",
-    "Capricorn": "../static/css/Capricorn.jpg",
-    "Aquarius": "../static/css/Aquarius.jpg",
-    "Pisces": "../static/css/Pisces.jpg",
+    "Aries": "../static/img/Aries.jpg",
+    "Taurus": "../static/img/Taurus.jpg",
+    "Gemini": "../static/img/Gemini.jpg",
+    "Cancer": "../static/img/Cancer.jpg",
+    "Leo": "../static/img/Leo.jpg",
+    "Virgo": "../static/img/Virgo.jpg",
+    "Libra": "../static/img/Libra.jpg",
+    "Scorpio": "../static/img/Scorpio.jpg",
+    "Sagittarius": "../static/img/Sagittarius.jpg",
+    "Capricorn": "../static/img/Capricorn.jpg",
+    "Aquarius": "../static/img/Aquarius.jpg",
+    "Pisces": "../static/img/Pisces.jpg",
 }
