@@ -1,6 +1,5 @@
 import unittest
 import zodiac
-from datetime import datetime
 
 
 class TestHoroscope(unittest.TestCase):

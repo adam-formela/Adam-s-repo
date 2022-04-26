@@ -1,4 +1,4 @@
-import pdfkit, random, requests, zodiac
+import random, requests, zodiac
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
@@ -50,8 +50,7 @@ def get_horoscope():
                 '-------------------------------------------------'
                 )
 
-    # pdf = pdfkit.from_url('http://127.0.0.1:5000/gethoroscope', 'horoscope.pdf')
-    return render_template('result.html', display_name=display_name, display_description=display_description, display_lucky_number=display_lucky_number, zodiac_sign=zodiac_sign, zodiac_img=zodiac_img)#, pdf=pdf)
+    return render_template('result.html', display_name=display_name, display_description=display_description, display_lucky_number=display_lucky_number, zodiac_sign=zodiac_sign, zodiac_img=zodiac_img)
 
 
 url = "https://sameer-kumar-aztro-v1.p.rapidapi.com/"
