@@ -3,12 +3,6 @@ import zodiac
 
 
 class TestHoroscope(unittest.TestCase):
-    def setUp(self):
-        self.formatted_date1 = zodiac.format_date('2021-09-30')
-        self.formatted_date2 = zodiac.format_date('2021-12-01')
-        self.formatted_date3 = zodiac.format_date('2023-01-01')
-        self.formatted_date4 = zodiac.format_date('2029-03-28')
-        self.formatted_date5 = zodiac.format_date('2099-05-31')
 
     def test_format_date(self):
         print('Testing date_format')
@@ -20,13 +14,19 @@ class TestHoroscope(unittest.TestCase):
             zodiac.format_date('12/13/2022')
             zodiac.format_date('053091')
 
+
     def test_zodiac(self):
         print('Testing zodiac')
-        self.assertEqual(zodiac.zodiac(self.formatted_date1), 'Libra')
-        self.assertEqual(zodiac.zodiac(self.formatted_date2), 'Sagittarius')
-        self.assertEqual(zodiac.zodiac(self.formatted_date3), 'Capricorn')
-        self.assertEqual(zodiac.zodiac(self.formatted_date4), 'Aries')
-        self.assertEqual(zodiac.zodiac(self.formatted_date5), 'Gemini')
+        formatted_date1 = zodiac.format_date('2021-09-30')
+        formatted_date2 = zodiac.format_date('2021-12-01')
+        formatted_date3 = zodiac.format_date('2021-01-01')
+        formatted_date4 = zodiac.format_date('2000-03-28')
+        formatted_date5 = zodiac.format_date('2015-05-31')
+        self.assertEqual(zodiac.zodiac(formatted_date1), 'Libra')
+        self.assertEqual(zodiac.zodiac(formatted_date2), 'Sagittarius')
+        self.assertEqual(zodiac.zodiac(formatted_date3), 'Capricorn')
+        self.assertEqual(zodiac.zodiac(formatted_date4), 'Aries')
+        self.assertEqual(zodiac.zodiac(formatted_date5), 'Gemini')
 
     def test_check_name(self):
         print('Testing check_name')
@@ -49,11 +49,16 @@ class TestHoroscope(unittest.TestCase):
 
     def test_check_date(self):
         print('Testing check_date')
-        self.assertTrue(zodiac.check_date(self.formatted_date1))
-        self.assertTrue(zodiac.check_date(self.formatted_date2))
-        self.assertFalse(zodiac.check_date(self.formatted_date3))
-        self.assertFalse(zodiac.check_date(self.formatted_date4))
-        self.assertFalse(zodiac.check_date(self.formatted_date5))
+        formatted_date1 = zodiac.format_date('2021-01-01')
+        formatted_date2 = zodiac.format_date('1999-09-05')
+        formatted_date3 = zodiac.format_date('2023-01-01')
+        formatted_date4 = zodiac.format_date('2555-12-15')
+        formatted_date5 = zodiac.format_date('2022-12-30')
+        self.assertTrue(zodiac.check_date(formatted_date1))
+        self.assertTrue(zodiac.check_date(formatted_date2))
+        self.assertFalse(zodiac.check_date(formatted_date3))
+        self.assertFalse(zodiac.check_date(formatted_date4))
+        self.assertFalse(zodiac.check_date(formatted_date5))
 
 
 if __name__ == '__main__':
